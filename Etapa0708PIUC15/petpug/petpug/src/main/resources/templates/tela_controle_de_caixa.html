@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PetPug</title>
+    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="/static.css" th:href="@{/static.css}"><head>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">PetFeliz</div>
+        <br>
+        <div class="subtitle">Controle de Caixa</div>
+        <br>
+        <div class="sub-container">
+            <div class="form-container">
+                <div class="form-group">
+                    <select id="produto" name="produto">
+                        <option value="0.0">Selecionar</option>
+                        <option th:each="produto : ${produtos}" th:value="${produto.preco}" th:text="${produto.nome}"></option>
+                    </select>
+                    <button class="ok-button" id="jButton1" onclick="atualizarLabel()">OK</button>
+                </div>
+                <div class="form-group">
+                    <label class="label">Nome:</label>
+                    <div id="label12" class="label"></div>
+                </div>
+                <div class="form-group">
+                    <label class="label">Tipo:</label>
+                    <div id="label13" class="label"></div>
+                </div>
+                <div class="form-group">
+                    <label class="label">Descrição:</label>
+                    <div id="label14" class="label"></div>
+                </div>
+                <div class="form-group">
+                    <label class="label">Empresa:</label>
+                    <div id="label15" class="label"></div>
+                </div>
+                <div class="form-group">
+                    <label class="label">Preço:</label>
+                    <div id="label16" class="label"></div>
+                </div>
+                <div class="form-group">
+                    <label class="label">Código:</label>
+                    <div id="label17" class="label"></div>
+                </div>
+            </div>
+            <div class="form-container2">
+                <div id="label-selecionado" class="total">Valor: <span id="opcao-selecionada"></span></div>
+                <div id="label-total" class="total">Valor Total: <span id="total"></span></div>
+                <div class="form-group2">
+                    <br>
+                    <button class="submit-button" id="jButton6" onclick="adicionarProduto()">Adicionar</button>
+                    <br>
+                    <br>
+                    <button class="submit-button" id="jButton7">Finalizar</button>
+                    <br>
+                    <br>
+                    <button class="back-button" id="jButton5">&lt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var somaAcumulativa = 0;
+        function atualizarLabel() {
+            var combo = document.getElementById("produto");
+            var valorSelecionadoString = combo.options[combo.selectedIndex].value;
+            var valorSelecionadoNumero = parseFloat(valorSelecionadoString);
+            var labelSelecionado = document.getElementById("opcao-selecionada");
+            labelSelecionado.textContent = valorSelecionadoNumero;
+        }
+        function adicionarProduto() {
+            var combo = document.getElementById("produto");
+            var valorSelecionadoString = combo.options[combo.selectedIndex].value;
+            var valorSelecionadoNumero = parseFloat(valorSelecionadoString);
+            somaAcumulativa += valorSelecionadoNumero;
+            var labelSomaAcumulativa = document.getElementById("total");
+            labelSomaAcumulativa.textContent = somaAcumulativa;
+        }
+        document.getElementById("jButton7").addEventListener("click", function () {
+            alert("Compra finalizada com sucesso! Total: R$ "+somaAcumulativa+".");
+            window.location.href = "/selecao";
+        });
+        document.getElementById("jButton5").addEventListener("click", function () {
+            window.location.href = "/selecao";
+        });
+    </script>
+</body>
+</html>
+

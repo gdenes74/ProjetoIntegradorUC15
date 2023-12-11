@@ -1,0 +1,570 @@
+table {
+    background: buttontext;
+    border-collapse: collapse;
+    width: 75%;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: graytext;
+}
+body {
+            background-color: #EEE4FF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 10px;
+            padding: 10px;
+        }
+  .form-container {
+    display: flex;
+    background-color: #17A7AD;
+    border-radius: 10px;
+    text-align: left;
+    padding: 20px;
+    width: 80%; /* largura do contêiner */
+}
+        .section {
+            flex: 3;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .section label {
+            font-family: 'Avignon Pro', sans-serif;
+            font-size: 20px;
+            color: #105F62;
+            white-space: nowrap;
+        }
+        .section label.header {
+            font-weight: bold;
+            font-size: 24px;
+            color: #105F62;
+            margin-top: 0px;
+        }
+        .section input, .section select {
+            background-color: #7CF0FD;
+            border: none;
+            border-bottom: 2px solid #105F62;
+            font-size: 18px;
+            padding: 5px;
+            max-width: 100%;
+        }
+        .buttons {
+            display: block;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .buttons button {
+            background-color: #105F62;
+            font-family: 'Avignon Pro', sans-serif;
+            font-size: 30px;
+            color: #7CF0FD;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .title {
+            font-family: 'Franklin Gothic Pro Heavy', sans-serif;
+            font-size: 36px;
+            color: #105F62;
+            text-align: center;
+        }
+        .subtitle {
+            font-family: 'Avignon Pro', sans-serif;
+            font-size: 30px;
+            color: #105F62;
+            text-align: center;
+        }
+        
+        body {
+            background-color: #EEE4FF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            display: flex;
+            background-color: #17A7AD;
+            border-radius: 10px;
+            text-align: left;
+            padding: 20px;
+        }
+        .section {
+            flex: 1;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .section label {
+            font-family: 'Avignon Pro', sans-serif;
+            font-size: 20px;
+            color: #105F62;
+            white-space: nowrap;
+        }
+        .section label.header {
+            font-weight: bold;
+            font-size: 24px;
+            color: #105F62;
+            margin-top: 10px;
+        }
+        .section input, .section select {
+            background-color: #7CF0FD;
+            border: none;
+            border-bottom: 2px solid #105F62;
+            font-size: 18px;
+            padding: 5px;
+            max-width: 100%;
+        }
+        .buttons {
+            display: block;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .buttons button {
+            background-color: #105F62;
+            font-family: 'Avignon Pro', sans-serif;
+            font-size: 30px;
+            color: #7CF0FD;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .title {
+            font-family: 'Franklin Gothic Pro Heavy', sans-serif;
+            font-size: 36px;
+            color: #105F62;
+            text-align: center;
+        }
+        .subtitle {
+            font-family: 'Avignon Pro', sans-serif;
+            font-size: 30px;
+            color: #105F62;
+            text-align: center;
+        }
+        
+        body {
+            background-color: #EEE4FF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            display: flex;
+            background-color: #17A7AD;
+            border-radius: 10px;
+            text-align: left;
+            padding: 20px;
+        }
+        .section {
+            flex: 3;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .section label {
+            font-family: 'Avignon Pro', sans-serif;
+            font-size: 20px;
+            color: #105F62;
+            white-space: nowrap;
+        }
+        .section label.header {
+            font-weight: bold;
+            font-size: 24px;
+            color: #105F62;
+            margin-top: 10px;
+        }
+        .section input, .section select {
+            background-color: #7CF0FD;
+            border: none;
+            border-bottom: 2px solid #105F62;
+            font-size: 18px;
+            padding: 5px;
+            max-width: 100%;
+        }
+        .buttons {
+            display:  block;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+        }
+        .buttons button {
+            background-color: #105F62;
+            font-family: 'Avignon Pro', sans-serif;
+            font-size: 30px;
+            color: #7CF0FD;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .title {
+            font-family: 'Franklin Gothic Pro Heavy', sans-serif;
+            font-size: 36px;
+            color: #105F62;
+            text-align: center;
+        }
+        .subtitle {
+            font-family: 'Avignon Pro', sans-serif;
+            font-size: 30px;
+            color: #105F62;
+            text-align: center;
+        }
+          body {
+            background-color: #EEE4FF;
+            margin: 0;
+            padding: 0;
+            font-family: 'Avignon Pro', sans-serif;
+        }
+        .container {
+            background-color: #C2E4D8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .title {
+            font-family: 'Franklin Gothic Pro Heavy', sans-serif;
+            font-size: 36px;
+            color: #445654;
+            text-align: center;
+        }
+        .form-container {
+            background-color: #809D97;
+            border-radius: 10px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .form-db {
+    background-color: #EEE4FF;
+    border-radius: 10px;
+    padding: 10px;
+    display:   flex;
+    flex-direction:   column;
+    align-items:  center;
+    gap: 50px;
+    width:90%;
+    height: 100%;
+}
+     
+        .header {
+            font-size: 30px;
+            color: #445654;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .label {
+            font-size: 24px;
+            color: #445654;
+            width: 40%;
+            white-space: nowrap;
+        }
+        .input {
+            font-size: 18px;
+            padding: 5px;
+            background-color: #C2E4D8;
+            border: none;
+            border-bottom: 2px solid #445654;
+            width: 70%;
+        }
+        .submit-button {
+            background-color: #445654;
+            color: #C2E4D8;
+            font-family: 'Avignon Pro', sans-serif;
+            font-size: 30px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .back-button {
+            background-color: #445654;
+            color: #C2E4D8;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        body {
+            background-color: #EEE4FF;
+            font-family: 'Avignon Pro', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: #EEE4FF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .sub-container {
+            background-color: #EEE4FF;
+            display: flex;
+            flex-direction:  column;
+            justify-content: space-between;
+            align-items: center;
+            height:  border-box;
+            width:100%;
+            
+        }
+        .title {
+            font-family: 'Franklin Gothic Pro Heavy', sans-serif;
+            font-size: 36px;
+            color: #4F417E;
+            text-align: center;
+        }
+        .subtitle {
+            font-family: 'Avignon Pro', sans-serif;
+            font-size: 30px;
+            color: #4F417E;
+            text-align: center;
+        }
+        .form-container {
+            background-color: #7C63D5;
+            border-radius: 10px 10px 10px 10px;
+            margin-top: 20px;
+            padding: 20px;
+            padding-bottom: 20px;
+            display:  flex;
+            flex-direction:  column ;
+            align-items: center;
+            gap: 10px;
+            width:100%;
+            height: 150%;
+        }
+        .form-container2 {
+            background-color: #7C63D5;
+            border-radius: 0 10px 10px 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            width: 45%;
+            height: 22em;
+        }
+        .header {
+            font-size: 24px;
+            color: #4F417E;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .form-group2 {
+            display: block;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+        .label {
+            font-size: 24px;
+            color: #4F417E;
+            width: 40%;
+        }
+        .input {
+            font-size: 18px;
+            padding: 5px;
+            background-color: #EEE4FF;
+            border: none;
+            border-bottom: 2px solid #4F417E;
+            width: 100%;
+            margin-left: 5px;
+            margin-right: 10px;
+        }
+        .ok-button {
+            background-color: #2D255A;
+            color: #EEE4FF;
+            font-family: 'Avignon Pro', sans-serif;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+        .submit-button {
+            background-color: #2D255A;
+            color: #EEE4FF;
+            font-family: 'Avignon Pro', sans-serif;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .back-button {
+            background-color: #2D255A;
+            color: #EEE4FF;
+            font-family: 'Avignon Pro', sans-serif;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .table-container {
+            background-color: #EEE4FF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #4F417E;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #7C63D5;
+            color: #EEE4FF;
+        }
+        .total {
+            font-size: 20px;
+            color: #4F417E;
+        }
+        body {
+            background-color: #EEE4FF;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .form {
+            background-color: #EEE4FF;
+            border-radius: 10px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        h1 {
+            padding-top: 10px;
+            font-family: "Franklin Gothic Pro Heavy", sans-serif;
+            font-size: 48px;
+            color: #72594A;
+        }
+        label {
+            text-align: center;
+            font-size: 30px;
+            color: #72594A;
+            width: 40%;
+            white-space: nowrap;
+            font-family: 'Avignon Pro', sans-serif;
+        }
+        input, button {
+            display: block;
+            margin: 10px 0;
+        }
+        input {
+            width: 100%;
+            padding: 5px;
+            font-size: 18px;
+            background-color: #E2D1B5;
+        }
+        button {
+            background-color: #3E3028;
+            font-family: "Avignon Pro", sans-serif;
+            font-size: 30px;
+            color: #E2D1B5;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 0 auto;
+        }body {
+            background-color: #EEE4FF;
+            font-family: 'Avignon Pro', sans-serif;
+            margin:10px;
+            padding: 30px;
+            height: 100vh;
+        }
+        .container {
+            background-color: #EEE4FF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .title {
+            font-family: 'Franklin Gothic Pro Heavy', sans-serif;
+            font-size: 36px;
+            color: #5E5E5E;
+        }
+        .options-container {
+            background-color: #9D9EA0;
+            border-radius: 10px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        .header {
+            font-size: 30px;
+            color: #5E5E5E;
+        }
+        .option-button {
+            background-color: #323232;
+            color: #D6D6D9;
+            font-family: 'Avignon Pro', sans-serif;
+            font-size: 30px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: left;
+        }
