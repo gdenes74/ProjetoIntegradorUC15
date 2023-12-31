@@ -21,25 +21,29 @@ import lombok.NoArgsConstructor;
 public class Cliente {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
     @Column(name = "nome", nullable = false)
     private String nome;
 
     @Column(name = "idade", nullable = false)
-    private int idade;
+    private Integer idade;
 
     @Column(name = "cpf", nullable = false, unique = true)
     private String cpf;
 
-    @Column(name = "endereço")
+    
     private String endereco;
 
     @Column(name = "telefone")
     private String telefone;
     
-    @OneToMany(mappedBy = "clienteId")
+    @OneToMany(mappedBy = "cliente")
     private List<Consulta> consultas;
 
+  
+
+ 
+    
 }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="/static.css" th:href="@{/static.css}"><head>
+    
+    <title>PetPug</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">PetPug</div>
+        <br>
+        <div class="form-container">
+            <form class="form-db" th:action="@{/produto/cadastrar}" th:object="${produto}" method="post">
+                <div class="header">Cadastrar Produto</div>
+                <br>
+                <div class="form-group">
+                    <label class="label" for="nome">Nome:</label>
+                    <input class="input" type="text" id="nome" th:field="*{nome}" placeholder="Digite o nome do Produto" required>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="tipo">Tipo:</label>
+                    <input class="input" type="text" id="tipo" th:field="*{tipo}" placeholder="Digite o tipo do Produto" required>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="descricao">Descrição:</label>
+                    <input class="input" type="text" id="descricao" th:field="*{descricao}" placeholder="Digite a descrição do Produto">
+                </div>
+                <div class="form-group">
+                    <label class="label" for="empresa">Empresa:</label>
+                    <input class="input" type="text" id="empresa" th:field="*{nomeDaEmpresa}" placeholder="Digite o nome da empresa" required>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="preco">Preço:</label>
+                    <input type="number" step="0.01" class="input" id="preco" th:field="*{preco}" placeholder="Digite o preço do Produto" required>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="codigo">Código:</label>
+                    <input class="input" type="text" id="codigo" th:field="*{codigo}" placeholder="Digite o código do Produto" required>
+                </div>
+                <br>
+                <button class="submit-button" type="submit">Cadastrar</button>
+            </form>
+            <button class="back-button" id="jButton5">&lt;</button>
+        </div>      
+    </div>
+
+    <script>
+        document.getElementById("jButton5").addEventListener("click", function () {
+            window.location.href = "/selecao";
+        });
+    </script>
+</body>
+</html>

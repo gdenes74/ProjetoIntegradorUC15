@@ -1,14 +1,17 @@
-
 package com.senacead.petpug.model;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
-import java.util.List;
+import java.util.Date;
+import java.util.Set;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,26 +20,44 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "Pet")
+@Table(name = "Consulta")
 public class Pet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
-    @Column(name = "nome")
-    private String nome;
+    @Column(name = "data_da_consulta")
+    private Date dataDaConsulta;
 
-    @Column(name = "espécie", nullable = false)
-    private String especie;
+    @Column(name = "doenca")
+    private String doenca;
 
-    @Column(name = "raça", nullable = false)
-    private String raca;
+    @Column(name = "tratamento")
+    private String tratamento;
 
-    @Column(name = "sexo")
-    private String sexo;
-    
-    @OneToMany(mappedBy = "petId")
-    private List<Consulta> consultas;
+    @Column(name = "valor_total")
+    private Double valorTotal;
 
+    @ManyToOne
+    @JoinColumn(name = "cliente_id", nullable = false)
+    private Cliente cliente;
+
+    @ManyToOne
+    @OneToMany(mappedBy = "pet", cascade = CascadeType.ALL)
+    private Set<Consulta> consultas;
+
+    public Set<Consulta> getConsultas() {
+
+        return consultas;
+    }
+
+    public void
+            setConsultas(Set<Consulta> consultas) {
+        this.consultas = consultas;
+    }
+
+    public Pet orElseThrow() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

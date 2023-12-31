@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="/static.css" th:href="@{/static.css}">
+    <title>PetPug</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">PetPug</div>
+        <br>
+        <div class="options-container">
+            <div class="header">Escolha a Opção</div>
+            <br>
+            <button class="option-button" id="jButton1">
+                Cadastro de Consultas Veterinárias
+            </button>
+            <button class="option-button" id="jButton4">
+                Cadastro de Produtos
+            </button>
+            <button class="option-button" id="jButton5">
+                Controle de Caixa
+            </button>
+            <button class="option-button" id="jButton6">
+                Cadastros
+            </button>
+            <button class="option-button" id="jButton2">
+                Sair
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("jButton1").addEventListener("click", function () {
+            window.location.href = "/consulta";
+        });
+
+        document.getElementById("jButton4").addEventListener("click", function () {
+            window.location.href = "/produto";
+        });
+
+        document.getElementById("jButton5").addEventListener("click", function () {
+            window.location.href = "/controle";
+        });
+
+        document.getElementById("jButton6").addEventListener("click", function () {
+            window.location.href = "/listar";
+        });
+
+        document.getElementById("jButton2").addEventListener("click", function () {
+            window.location.href = "/inicio";
+        });
+    </script>
+</body>
+</html>
+
